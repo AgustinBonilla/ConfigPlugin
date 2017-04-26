@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ConfigPluginSample"
+             x:Class="ConfigPluginSample.MainPage">
+    <StackLayout Orientation="Vertical" Spacing="30" Padding="10,10,10,10" VerticalOptions="Center">
+        <Label Text="Welcome to ConfigPlugin Sample!" HorizontalOptions="Center" />
+        <StackLayout Orientation="Vertical" Spacing="2">
+            <Label Text="UrlWebService:" HorizontalOptions="Center" />
+            <Label x:Name="lblUrlWebService" HorizontalOptions="Center" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="2">
+            <Label Text="CloudDataBaseConnectionString:" HorizontalOptions="Center" />
+            <Label x:Name="lblCloudDataBaseConnectionString" HorizontalOptions="Center" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="2">
+            <Label Text="PushNotificationService:" HorizontalOptions="Center" />
+            <Label x:Name="lblPushNotificationService" HorizontalOptions="Center" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="2">
+            <Label Text="UrlAnalyticsService:" HorizontalOptions="Center" />
+            <Label x:Name="lblUrlAnalyticsService" HorizontalOptions="Center" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
