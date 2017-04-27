@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Arkano.Xamarin.ConfigPlugin</id>
+    <version>1.0.0.0</version>
+    <title>ConfigPlugin for Xamarin Applications</title>
+    <authors>Agustin Bonilla</authors>
+    <owners>Agustin Bonilla</owners>
+    <licenseUrl>https://github.com/AgustinBonilla/ConfigPlugin</licenseUrl>
+    <projectUrl>https://github.com/AgustinBonilla/ConfigPlugin</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/AgustinBonilla/ConfigPlugin/master/art/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Config plugin to Xamarin.Forms, Xamarin.Android and Xamarin.iOS applications. This plugin allows you to define the settings of the application for each environment in which it will run. This plugin uses json files to maintain the settings, so a file will be configured for each environment. For example: three json files are configured, one with the development environment settings, another with the testing environment settings and finally one with the production environment settings.</description>
+    <releaseNotes>Allows you to define the settings of the application for each environment in which it will run.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Xamarin Xam Xam.Plugin Xamarin.Plugin Xamarin.Forms XamarinConfig Xamarin.Forms.Config XamarinFormsConfig ConfigPlugin PluginConfig Configuration Plugin Settings AppConfig ApplicationConfig</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\ConfigPlugin.dll" target="lib\netstandard1.4\AppLogger.dll" />
+    <file src="bin\Release\ConfigPlugin.xml" target="lib\netstandard1.4\AppLogger.xml" />
+ </files>
+</package>
