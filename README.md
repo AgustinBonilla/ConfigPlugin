@@ -2,9 +2,9 @@
 
 ![ConfigPlugin Logo](https://raw.githubusercontent.com/AgustinBonilla/ConfigPlugin/master/art/icon.png)
 
-Config plugin to Xamarin.Forms, Xamarin.Android and Xamarin.iOS applications.
+Config plugin for Xamarin.Forms, Xamarin.Android and Xamarin.iOS applications.
 
-This plugin allows you to define the settings of the application for each environment in which it will run. This plugin uses json files to maintain the settings, so a file will be configured for each environment.
+This plugin allows to define the settings of the application for each environment in which it will run. This plugin uses json files to maintain the settings, so a file will be configured for each environment.
 
 For example: three json files are configured, one with the development environment settings, another with the testing environment settings and finally one with the production environment settings.
 
@@ -30,7 +30,7 @@ public App()
 ```
 
 **Implement Configuration class**
-CurrentConfiguration must be implemented, where the build directives must be linked with the names of the json configuration files.
+CurrentConfiguration must be implemented, using build directives to link the json files for each enviroment.
 Create a property for each application configuration.
 ```csharp
 public class Configuration : IConfiguration
