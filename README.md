@@ -1,4 +1,7 @@
-# ConfigPlugin for Xamarin Applications 
+# ConfigPlugin for Xamarin Applications
+
+![ConfigPlugin Logo](https://raw.githubusercontent.com/AgustinBonilla/ConfigPlugin/master/art/icon.png)
+
 Config plugin to Xamarin.Forms, Xamarin.Android and Xamarin.iOS applications.
 
 This plugin allows you to define the settings of the application for each environment in which it will run. This plugin uses json files to maintain the settings, so a file will be configured for each environment.
