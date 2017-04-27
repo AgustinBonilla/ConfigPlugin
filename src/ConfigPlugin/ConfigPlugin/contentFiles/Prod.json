@@ -1,0 +1,6 @@
+﻿{
+  "UrlWebService": "https://myserviceprod.azurewebsites.net",
+  "CloudDataBaseConnectionString": "myserverprod.database.windows.net",
+  "PushNotificationService": "notificationhubprod.servicebus.windows.net",
+  "UrlAnalyticsService": "https://mobile.azure.com/apps/appprod"
+}

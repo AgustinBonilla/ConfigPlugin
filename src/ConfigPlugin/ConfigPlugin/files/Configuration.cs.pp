@@ -1,6 +1,6 @@
-using ConfigPlugin.Interfaces;
+﻿using ConfigPlugin.Interfaces;
 
-namespace ConfigPluginSample.Config
+namespace $rootnamespace$.Config
 {
     public class Configuration : IConfiguration
     {
