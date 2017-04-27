@@ -1,31 +1,55 @@
 ﻿using ConfigPlugin.Interfaces;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace ConfigPlugin.Managers
 {
+    /// <summary>
+    /// Class to manage application configurations.
+    /// </summary>
     public static class ConfigurationManager
     {
         #region Attributes
 
+        /// <summary>
+        /// Application assembly.
+        /// </summary>
         private static Assembly appAssembly;
+
+        /// <summary>
+        /// Assembly name.
+        /// </summary>
         private static string assemblyName;
+
+        /// <summary>
+        /// Configuration class name.
+        /// </summary>
         private static string configurationClassName;
+
+        /// <summary>
+        /// Configuration class type.
+        /// </summary>
         private static Type configurationClassType;
+
+        /// <summary>
+        /// Configuration.
+        /// </summary>
         private static IConfiguration configuration;
+
+        /// <summary>
+        /// Configuration manager is initialized.
+        /// </summary>
         private static bool initialized = false;
 
         #endregion Attributes
 
         #region Properties
 
+        /// <summary>
+        /// Get the current configuration for the running environment.
+        /// </summary>
         public static IConfiguration Configuration
         {
             get
@@ -53,7 +77,11 @@ namespace ConfigPlugin.Managers
 
         #region Methods
 
-        public static void Init(Application application)
+        /// <summary>
+        /// Initialize the configuration plugin.
+        /// </summary>
+        /// <param name="application">Xamarin application instance.</param>
+        public static void Init(object application)
         {
             try
             {
@@ -69,6 +97,9 @@ namespace ConfigPlugin.Managers
             }
         }
 
+        /// <summary>
+        /// Load configuration class type.
+        /// </summary>
         private static void LoadConfigurationClassType()
         {
             assemblyName = appAssembly.GetName().Name;
@@ -80,7 +111,10 @@ namespace ConfigPlugin.Managers
             }
         }
 
-        public static void LoadConfigurationFile()
+        /// <summary>
+        /// Load configuration file.
+        /// </summary>
+        private static void LoadConfigurationFile()
         {
             try
             {

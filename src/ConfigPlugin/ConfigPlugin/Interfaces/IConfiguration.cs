@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConfigPlugin.Interfaces
+﻿namespace ConfigPlugin.Interfaces
 {
+    /// <summary>
+    /// Configuration interface.
+    /// </summary>
     public interface IConfiguration
     {
+        /// <summary>
+        /// Current instance of the configuration.
+        /// </summary>
         string CurrentConfiguration { get; }
     }
 }
