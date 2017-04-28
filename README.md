@@ -9,7 +9,7 @@ This plugin allows to define the settings of the application for each environmen
 For example: three json files are configured, one with the development environment settings, another with the testing environment settings and finally one with the production environment settings.
 
 ### Setup
-* Available on NuGet: http://www.nuget.org/
+* Available on NuGet: https://www.nuget.org/packages/Xamarin.ConfigPlugin/
 * Install into your PCL project.
 * Set Build Action as an Embedded Resource to the files: {PCL_Project}\Config\Dev.json, {PCL_Project}\Config\Test.json and {PCL_Project}\Config\Prod.json.
 
