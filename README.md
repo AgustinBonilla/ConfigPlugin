@@ -126,5 +126,8 @@ public partial class MainPage : ContentPage
 * Configuration class not found. You must validate that the Configuration class has been implemented and is located in {PCL_Project}\Config\.
 * Configuration file not found ({0}). Verify that the configuration file has the Build Action property in Embedded Resource. You must validate that the json files are configured with Build Action Embedded Resource and that their names correspond to those in the Configuration class with the build directives.
 
+#### Improvements to implement:
+* In the nuget installation, the json files are automatically configured with the BuildAction property in Embedded Resource.
+
 #### Contributions
 Contributions are welcome! If you find a bug please report it and if you want a feature please report it.
