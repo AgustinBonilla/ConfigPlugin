@@ -16,8 +16,8 @@
     <copyright>Copyright 2017</copyright>
     <tags>Xamarin Xam Xam.Plugin Xamarin.Plugin Xamarin.Forms XamarinConfig Xamarin.Forms.Config XamarinFormsConfig ConfigPlugin PluginConfig Configuration Plugin Settings AppConfig ApplicationConfig</tags>
 	<dependencies>
-		<group targetFramework="portable-net45+wp80+win8+wpa81">
-			<dependency id="Newtonsoft.Json" version="8.0.3" />
+		<group targetFramework="netstandard2.0">
+			<dependency id="Newtonsoft.Json" version="11.0.2ßß" />
 		</group>
 	</dependencies>
 	<contentFiles>
@@ -25,12 +25,12 @@
 	</contentFiles>
   </metadata>
   <files>
-    <file src="bin\Release\ConfigPlugin.dll" target="lib\portable-net45+wp80+win8+wpa81" />
-    <file src="bin\Release\ConfigPlugin.xml" target="lib\portable-net45+wp80+win8+wpa81" />
-	<file src="files\Configuration.cs.pp" target="content\portable-net45+wp80+win8+wpa81\Config\Configuration.cs.pp" />
-	<file src="contentFiles\Dev.json" target="content\portable-net45+wp80+win8+wpa81\Config\Dev.json" />
-	<file src="contentFiles\Test.json" target="content\portable-net45+wp80+win8+wpa81\Config\Test.json" />
-	<file src="contentFiles\Prod.json" target="content\portable-net45+wp80+win8+wpa81\Config\Prod.json" />
+    <file src="bin\Release\ConfigPlugin.dll" target="lib\netstandard2.0" />
+    <file src="bin\Release\ConfigPlugin.xml" target="lib\netstandard2.0" />
+	<file src="files\Configuration.cs.pp" target="content\netstandard2.0\Config\Configuration.cs.pp" />
+	<file src="contentFiles\Dev.json" target="content\netstandard2.0\Config\Dev.json" />
+	<file src="contentFiles\Test.json" target="content\netstandard2.0\Config\Test.json" />
+	<file src="contentFiles\Prod.json" target="content\netstandard2.0\Config\Prod.json" />
 	<file src="tools\install.ps1" target="tools\install.ps1" />
   </files>
 </package>
