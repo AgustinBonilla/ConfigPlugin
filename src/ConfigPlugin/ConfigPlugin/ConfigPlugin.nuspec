@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xamarin.ConfigPlugin</id>
-    <version>1.0.0.0</version>
+    <version>2.0.0.0</version>
     <title>ConfigPlugin for Xamarin Applications</title>
     <authors>Agustin Bonilla</authors>
     <owners>Agustin Bonilla</owners>
@@ -13,11 +13,11 @@
     <description>Config plugin to Xamarin.Forms, Xamarin.Android and Xamarin.iOS applications.</description>
     <summary>This plugin allows you to define the settings of the application for each environment in which it will run. This plugin uses json files to maintain the settings, so a file will be configured for each environment. For example: three json files are configured, one with the development environment settings, another with the testing environment settings and finally one with the production environment settings.</summary>
 	<releaseNotes>Allows you to define the settings of the application for each environment in which it will run.</releaseNotes>
-    <copyright>Copyright 2017</copyright>
+    <copyright>Copyright 2018</copyright>
     <tags>Xamarin Xam Xam.Plugin Xamarin.Plugin Xamarin.Forms XamarinConfig Xamarin.Forms.Config XamarinFormsConfig ConfigPlugin PluginConfig Configuration Plugin Settings AppConfig ApplicationConfig</tags>
 	<dependencies>
 		<group targetFramework="netstandard2.0">
-			<dependency id="Newtonsoft.Json" version="11.0.2ßß" />
+			<dependency id="Newtonsoft.Json" version="11.0.2" />
 		</group>
 	</dependencies>
 	<contentFiles>
