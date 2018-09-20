@@ -1,0 +1,5 @@
+﻿1) Change to the folder containing the nuget.exe file (project root folder).
+
+2) nuget pack ConfigPlugin.nuspec
+
+3) nuget push Xamarin.ConfigPlugin.2.1.0.nupkg -Source https://www.nuget.org/api/v2/package -ApiKey oy2npletodcmyz5dlhmqra6ehxai2bkujaltarsk3oui2e

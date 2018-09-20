@@ -1,36 +1,151 @@
-<?xml version="1.0"?>
-<package >
-  <metadata>
-    <id>Xamarin.ConfigPlugin</id>
-    <version>2.0.0.0</version>
-    <title>ConfigPlugin for Xamarin Applications</title>
-    <authors>Agustin Bonilla</authors>
-    <owners>Agustin Bonilla</owners>
-    <licenseUrl>https://github.com/AgustinBonilla/ConfigPlugin</licenseUrl>
-    <projectUrl>https://github.com/AgustinBonilla/ConfigPlugin</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/AgustinBonilla/ConfigPlugin/master/art/icon.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Config plugin to Xamarin.Forms, Xamarin.Android and Xamarin.iOS applications.</description>
-    <summary>This plugin allows you to define the settings of the application for each environment in which it will run. This plugin uses json files to maintain the settings, so a file will be configured for each environment. For example: three json files are configured, one with the development environment settings, another with the testing environment settings and finally one with the production environment settings.</summary>
-	<releaseNotes>Allows you to define the settings of the application for each environment in which it will run.</releaseNotes>
-    <copyright>Copyright 2018</copyright>
-    <tags>Xamarin Xam Xam.Plugin Xamarin.Plugin Xamarin.Forms XamarinConfig Xamarin.Forms.Config XamarinFormsConfig ConfigPlugin PluginConfig Configuration Plugin Settings AppConfig ApplicationConfig</tags>
-	<dependencies>
-		<group targetFramework="netstandard2.0">
-			<dependency id="Newtonsoft.Json" version="11.0.2" />
-		</group>
-	</dependencies>
-	<contentFiles>
-		<files include="contentFiles\*" buildAction="EmbeddedResource" />
-	</contentFiles>
-  </metadata>
-  <files>
-    <file src="bin\Release\ConfigPlugin.dll" target="lib\netstandard2.0" />
-    <file src="bin\Release\ConfigPlugin.xml" target="lib\netstandard2.0" />
-	<file src="files\Configuration.cs.pp" target="content\netstandard2.0\Config\Configuration.cs.pp" />
-	<file src="contentFiles\Dev.json" target="content\netstandard2.0\Config\Dev.json" />
-	<file src="contentFiles\Test.json" target="content\netstandard2.0\Config\Test.json" />
-	<file src="contentFiles\Prod.json" target="content\netstandard2.0\Config\Prod.json" />
-	<file src="tools\install.ps1" target="tools\install.ps1" />
-  </files>
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+   <metadata>
+      <id>Xamarin.ConfigPlugin</id>
+      <version>2.1.0.0</version>
+      <title>ConfigPlugin for Xamarin Applications</title>
+      <authors>Agustin Bonilla</authors>
+      <owners>Agustin Bonilla</owners>
+      <licenseUrl>https://github.com/AgustinBonilla/ConfigPlugin</licenseUrl>
+      <projectUrl>https://github.com/AgustinBonilla/ConfigPlugin</projectUrl>
+      <iconUrl>https://raw.githubusercontent.com/AgustinBonilla/ConfigPlugin/master/art/icon.png</iconUrl>
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+      <description>Config plugin to Xamarin.Forms, Xamarin.Android and Xamarin.iOS applications.</description>
+      <summary>This plugin allows you to define the settings of the application for each environment in which it will run. This plugin uses json files to maintain the settings, so a file will be configured for each environment. For example: three json files are configured, one with the development environment settings, another with the testing environment settings and finally one with the production environment settings.</summary>
+      <releaseNotes>Allows you to define the settings of the application for each environment in which it will run.</releaseNotes>
+      <copyright>Copyright 2018</copyright>
+      <tags>Xamarin Xam Xam.Plugin Xamarin.Plugin Xamarin.Forms XamarinConfig Xamarin.Forms.Config XamarinFormsConfig ConfigPlugin PluginConfig Configuration Plugin Settings AppConfig ApplicationConfig</tags>
+      <dependencies>
+         <group targetFramework="net">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="win">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="wp">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="wpa">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="netstandard1.0">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="netstandard2.0">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="netcoreapp2.0">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="MonoAndroid10">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="Xamarin.iOS10">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="Xamarin.Mac20">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="portable-net45+win+wpa81+wp80">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="uap">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="dotnet">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="xamarintvos">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+         <group targetFramework="xamarinwatchos">
+            <dependency id="Newtonsoft.Json" version="11.0.2" />
+         </group>
+      </dependencies>
+      <contentFiles>
+         <files include="contentFiles\*" buildAction="EmbeddedResource" />
+      </contentFiles>
+   </metadata>
+   <files>
+      <!--NetStandard1.0/PCL-->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\netstandard1.0" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\netstandard1.0" />
+      <file src="files\Configuration.cs.pp" target="content\netstandard1.0\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\netstandard1.0\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\netstandard1.0\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\netstandard1.0\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--NetStandard2.0/PCL-->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\netstandard2.0" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\netstandard2.0" />
+      <file src="files\Configuration.cs.pp" target="content\netstandard2.0\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\netstandard2.0\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\netstandard2.0\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\netstandard2.0\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--Xamarin.Android-->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\MonoAndroid10" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\MonoAndroid10" />
+      <file src="files\Configuration.cs.pp" target="content\MonoAndroid10\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\MonoAndroid10\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\MonoAndroid10\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\MonoAndroid10\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--Xamarin.iOS -->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\Xamarin.iOS10" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\Xamarin.iOS10" />
+      <file src="files\Configuration.cs.pp" target="content\Xamarin.iOS10\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\Xamarin.iOS10\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\Xamarin.iOS10\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\Xamarin.iOS10\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--Xamarin.macOS -->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\Xamarin.Mac20" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\Xamarin.Mac20" />
+      <file src="files\Configuration.cs.pp" target="content\Xamarin.Mac20\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\Xamarin.Mac20\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\Xamarin.Mac20\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\Xamarin.Mac20\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--UWP-->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\UAP10" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\UAP10" />
+      <file src="files\Configuration.cs.pp" target="content\UAP10\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\UAP10\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\UAP10\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\UAP10\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--Net 45-->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\net45" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\net45" />
+      <file src="files\Configuration.cs.pp" target="content\net45\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\net45\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\net45\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\net45\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--Xamarin.tvOS -->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\xamarintvOS" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\xamarintvOS" />
+      <file src="files\Configuration.cs.pp" target="content\xamarintvOS\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\xamarintvOS\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\xamarintvOS\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\xamarintvOS\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--Xamarin.watchOS -->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\xamarinwatchOS" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\xamarinwatchOS" />
+      <file src="files\Configuration.cs.pp" target="content\xamarinwatchOS\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\xamarinwatchOS\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\xamarinwatchOS\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\xamarinwatchOS\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+      <!--Net Core-->
+      <file src="bin\Release\ConfigPlugin.dll" target="lib\netcoreapp2.0" />
+      <file src="bin\Release\ConfigPlugin.xml" target="lib\netcoreapp2.0" />
+      <file src="files\Configuration.cs.pp" target="content\netcoreapp2.0\Config\Configuration.cs.pp" />
+      <file src="contentFiles\Dev.json" target="content\netcoreapp2.0\Config\Dev.json" />
+      <file src="contentFiles\Test.json" target="content\netcoreapp2.0\Config\Test.json" />
+      <file src="contentFiles\Prod.json" target="content\netcoreapp2.0\Config\Prod.json" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+   </files>
 </package>

@@ -1,0 +1,6 @@
+﻿{
+  "UrlWebService": "https://myservicedev.azurewebsites.net",
+  "CloudDataBaseConnectionString": "myserverdev.database.windows.net",
+  "PushNotificationService": "notificationhubdev.servicebus.windows.net",
+  "UrlAnalyticsService": "https://mobile.azure.com/apps/appdev"
+}
